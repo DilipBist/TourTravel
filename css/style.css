@@ -3588,15 +3588,18 @@ img {
     border-radius: 10px;
     overflow: hidden;
 }
+
 .room_option_continer h4 {
     font-weight: 600;
     color: var(--black-shade01);
 }
-.hotel_rooms_container table tbody{
+
+.hotel_rooms_container table tbody {
     border: 2px solid var(--top-header) !important;
     border-radius: 10px;
     border-top: 0;
 }
+
 /* ++++++++++++ HOTEL PAGE CSS ENDS ++++++++++++ */
 
 
@@ -3639,62 +3642,167 @@ img {
 
 
 /* ========== BLOG PAGE CSS STARTS =========== */
-.BLOG_POSTER{
+.BLOG_POSTER {
     height: 420px;
     overflow: hidden;
 }
-.BLOG_POSTER img{
+
+.BLOG_POSTER img {
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
-.blog_card_details{
+
+.blog_card_details {
     padding: 24px 34px;
     background-color: var(--white-color);
 }
-.blog_card_container{
+
+.blog_card_container {
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0px 0px 20px 10px rgba(153, 153, 153, 0.2);
 }
-.blog_card_details h3{
+
+.blog_card_details h3 {
     color: var(--black-shade01);
-    font-size: clamp(22px, 3vw, 32px);
+    font-size: clamp(26px, 3vw, 32px);
     font-weight: 700;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
 }
-.blog_card_details p{
+
+.blog_card_details p {
     color: var(--grey-color);
     font-weight: 400;
 }
-.blog_card_details .primary_btn:hover{
+
+.blog_card_details .primary_btn:hover {
     color: var(--primary-color);
 }
-.blog_social_icons ul li img{
+
+.blog_social_icons ul li img {
     width: 22px;
 }
-.blog_social_icons ul{
+
+.blog_social_icons ul {
     display: flex;
     align-items: center;
     gap: 16px;
 }
-.blog_social_icons{
+
+.blog_social_icons {
     display: flex;
     align-items: center;
     gap: 16px;
 }
-.blog_social_icons h5{
+
+.blog_social_icons h5 {
     margin: 0;
     font-weight: 600;
 }
-.blog_description{
+
+.blog_description {
     color: var(--grey-color);
     font-weight: 400;
-        display: -webkit-box;
+    display: -webkit-box;
     -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;  
+    -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+
+.blog_shadow {
+    padding: clamp(24px, 3vw, 44px);
+    box-shadow: 0 0 20px 5px rgba(194, 194, 194, 0.2);
+    border-radius: 10px;
+    background-color: var(--white-color);
+}
+
+.blog_shadow h4 {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: 700;
+}
+
+.blog_shadow h4 i {
+    color: var(--primary-color);
+}
+
+.blog_search {
+    position: relative;
+    margin-top: 20px;
+}
+
+.blog_search input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid var(--top-header);
+    border-radius: 5px;
+    outline: none;
+}
+
+.blog_search i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.recent_blog_Details:hover .rec_blog_img img {
+    transform: scale(1.05);
+}
+.recent_blog_Details:hover{
+    color: var(--primary-color);
+}
+
+.recent_blog_Details .rec_blog_img {
+    height: 80px;
+    width: 80px;
+    border-radius: 5px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.recent_blog_Details .rec_blog_img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: all .5s ease-in-out;
+}
+
+.recent_blog_Details h6 {
+    transition: all .5s ease-in-out;
+    font-weight: 700;
+}
+
+.recent_blog_Details p {
+    color: var(--grey-color);
+    font-weight: 400;
+}
+.blog_shadow ul{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    color: var(--grey-color);
+    font-weight: 400;
+    margin-top: 20px;
+}
+.blog_shadow .tag_links{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+.blog_shadow .tag_links a{
+    padding: 5px 16px;
+    border-radius: 20px;
+    border: 2px solid var(--top-header);
+    color: var(--grey-color);
+    font-weight: 400;
 }
 /* ========== BLOG PAGE CSS ENDS =========== */
 
@@ -4082,6 +4190,15 @@ img {
         height: 300px;
         border-radius: 0;
     }
+
+    .BLOG_POSTER {
+        height: 240px;
+    }
+
+    .blog_card_details {
+        padding: 20px;
+    }
+
 
 }
 
