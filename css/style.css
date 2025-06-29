@@ -3419,6 +3419,15 @@ img {
     width: 80px;
     border: 2px solid var(--top-header);
     border-radius: 5px;
+    padding: 10px;
+}
+.facility_icon img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+.fac_des h5{
+    font-weight: 700;
 }
 /* ++++++++++++ HOTEL PAGE CSS ENDS ++++++++++++ */
 
