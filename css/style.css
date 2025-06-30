@@ -3341,7 +3341,7 @@ img {
     }
 }
 
-.hotel_properties_high_light_Section {
+.hotel_properties_high_light_Section, .top_reson_to_Choose {
     padding: clamp(24px, 3vw, 44px);
     border: 2px solid var(--top-header);
     border-radius: 10px;
@@ -3356,7 +3356,7 @@ img {
     object-fit: contain;
 }
 .hotel_properties_high_light_Section h3,
-.hotel_rooms_container h3 {
+.hotel_rooms_container h3, .top_reson_to_Choose h3{
     font-weight: 700;
     margin-bottom: 20px;
 }
@@ -3551,7 +3551,31 @@ img {
     flex-direction: column;
     gap: 8px;
 }
-
+.reson_icon{
+    height: 55px;
+    width: 55px;
+    border: 2px solid var(--top-header);
+    border-radius: 50%;
+    padding: 10px;
+    flex-shrink: 0;
+}
+.reson_icon img{
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+}
+.top_reson_to_Choose ul{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.top_reson_to_Choose ul li{
+    display: flex;
+    gap: 16px;
+}
+.top_reson_to_Choose p{
+    margin: 0;
+}
 .hotel_serv_list ul li {
     position: relative;
     padding-left: 24px;
