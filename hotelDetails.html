@@ -591,90 +591,342 @@
             </div>
 
 
-            <div class="hotel_rooms_container">
-                <h3>Available Rooms</h3>
-                <div class="table-responsive">
-                    <table class="table table-borderless">
-                        <thead>
-                            <tr>
-                                <th scope="col">Room Type</th>
-                                <th scope="col">Room Option</th>
-                                <th scope="col">Facilities</th>
-                                <th scope="col">Pricing</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <div class="room_option_continer">
-                                        <div class="room_img">
-                                            <img src="./images/home/destinations/destination1.jpg" alt="">
+            <div class="customScrollbar">
+                <div class="hotel_rooms_container">
+                    <h3>Available Rooms</h3>
+
+                    <div class="hotel_table_heading">
+                        <div class="row g-0 rounded-top-2 overflow-hidden">
+                            <div class="col-3">
+                                <div class="hotel_heading">
+                                    Room Type
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="row g-0">
+                                    <div class="col-6">
+                                        <div class="hotel_heading">
+                                            Room Option
                                         </div>
-                                        <h4>Super King Delux</h4>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia iste cumque
-                                            ipsa sint ducimus nulla.</p>
                                     </div>
-                                </td>
-                                <td>
-                                    <div class="rom_option">
-                                        <ul>
-                                            <li>Free cancellation</li>
-                                            <li>Pets Allowed</li>
-                                            <li>Car Parking</li>
-                                        </ul>
+                                    <div class="col-6">
+                                        <div class="hotel_heading">
+                                            Facilities
+                                        </div>
                                     </div>
-                                </td>
-                                <td>
-                                    <div class="hotel_serv_list">
-                                        <ul>
-                                            <li>Free Wifi</li>
-                                            <li>Excerise in gym</li>
-                                            <li>Easy car parking </li>
-                                            <li>Free transportaion form airport</li>
-                                            <li>special guide instruction</li>
-                                            <li>Pay at the hotel</li>
-                                            <li>Paid Resturant Access</li>
-                                        </ul>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="hotel_heading">
+                                    Pricing
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hotel_table_details">
+                        <div class="row g-0 hotel_table_border">
+                            <div class="col-3 hotel_table_border2">
+                                <div class="room_option_continer">
+                                    <div class="room_img">
+                                        <img src="./images/home/destinations/destination1.jpg" alt="">
                                     </div>
-                                </td>
-                                <td>
-                                    <div class="hotel_price">
-                                        $1299
-                                        <span>/Per Night</span>
+                                    <h4>Super King Delux</h4>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia iste cumque
+                                        ipsa sint ducimus nulla.</p>
+
+                                    <div class="bed_description d-flex flex-column gap-2">
+                                        <div class="d-flex gap-2">
+                                            <div class="bed_desc_img">
+                                                <img src="./images/icons/room.png" alt="">
+                                            </div>
+                                            <p>Room size: 40m <sup>2</sup></p>
+                                        </div>
+                                        <div class="d-flex gap-2">
+                                            <div class="bed_desc_img">
+                                                <img src="./images/icons/river.png" alt="">
+                                            </div>
+                                            <p>River View</p>
+                                        </div>
+                                        <div class="d-flex gap-2">
+                                            <div class="bed_desc_img">
+                                                <img src="./images/icons/double-bed.png" alt="">
+                                            </div>
+                                            <p>1 King Bed</p>
+                                        </div>
                                     </div>
-                                    <div class="hotel_room_num">
-                                        Price for 1 room
+                                </div>
+                            </div>
+
+                            <div class="col-9 hotel_table_border2">
+                                <div class="row g-0">
+                                    <div class="col-4">
+                                        <div class="rom_option">
+                                            <ul>
+                                                <li>Free cancellation</li>
+                                                <li>Pets Allowed</li>
+                                                <li>Car Parking</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="hotel_serv_list">
+                                            <ul>
+                                                <li>Free Wifi</li>
+                                                <li>Excerise in gym</li>
+                                                <li>Easy car parking </li>
+                                                <li>Free transportaion form airport</li>
+                                                <li>special guide instruction</li>
+                                                <li>Pay at the hotel</li>
+                                                <li>Paid Resturant Access</li>
+                                            </ul>
+                                        </div>
                                     </div>
 
-                                    <div class="hotel_book_btn">
-                                        <a href="contact.html" class="primary_btn">
-                                            Book Now
-                                        </a>
+
+                                    <div
+                                        class="col-4 hotel_table_border2 d-flex align-items-center justify-content-center">
+                                        <div class="text-center p-3">
+                                            <div class="hotel_price">
+                                                $1299
+                                                <span>/Per Night</span>
+                                            </div>
+                                            <div class="hotel_room_num">
+                                                Price for 1 room
+                                            </div>
+
+                                            <div class="hotel_book_btn">
+                                                <a href="contact.html" class="primary_btn">
+                                                    Book Now
+                                                </a>
+                                            </div>
+                                        </div>
                                     </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Suite</td>
-                                <td>Double Bed</td>
-                                <td>Wi-Fi, TV, AC, Mini Bar</td>
-                                <td>$200/night</td>
-                            </tr>
-                            <tr>
-                                <td>Executive</td>
-                                <td>King Bed</td>
-                                <td>Wi-Fi, TV, AC, Mini Bar, Workspace</td>
-                                <td>$250/night</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                                </div>
+                                <div class="row g-0">
+                                    <div class="col-4">
+                                        <div class="rom_option">
+                                            <ul>
+                                                <li>Free cancellation</li>
+                                                <li>Pets Allowed</li>
+                                                <li>Car Parking</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="hotel_serv_list">
+                                            <ul>
+                                                <li>Free Wifi</li>
+                                                <li>Excerise in gym</li>
+                                                <li>Easy car parking </li>
+                                                <li>Free transportaion form airport</li>
+                                                <li>special guide instruction</li>
+                                                <li>Pay at the hotel</li>
+                                                <li>Paid Resturant Access</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+
+                                    <div
+                                        class="col-4 hotel_table_border2 d-flex align-items-center justify-content-center">
+                                        <div class="text-center p-3">
+                                            <div class="hotel_price">
+                                                $1299
+                                                <span>/Per Night</span>
+                                            </div>
+                                            <div class="hotel_room_num">
+                                                Price for 1 room
+                                            </div>
+
+                                            <div class="hotel_book_btn">
+                                                <a href="contact.html" class="primary_btn">
+                                                    Book Now
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row g-0">
+                                    <div class="col-4">
+                                        <div class="rom_option border-bottom-0">
+                                            <ul>
+                                                <li>Free cancellation</li>
+                                                <li>Pets Allowed</li>
+                                                <li>Car Parking</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="hotel_serv_list border-bottom-0">
+                                            <ul>
+                                                <li>Free Wifi</li>
+                                                <li>Excerise in gym</li>
+                                                <li>Easy car parking </li>
+                                                <li>Free transportaion form airport</li>
+                                                <li>special guide instruction</li>
+                                                <li>Pay at the hotel</li>
+                                                <li>Paid Resturant Access</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+
+                                    <div
+                                        class="col-4 hotel_table_border2 d-flex align-items-center justify-content-center border-bottom-0">
+                                        <div class="text-center p-3">
+                                            <div class="hotel_price">
+                                                $1299
+                                                <span>/Per Night</span>
+                                            </div>
+                                            <div class="hotel_room_num">
+                                                Price for 1 room
+                                            </div>
+
+                                            <div class="hotel_book_btn">
+                                                <a href="contact.html" class="primary_btn">
+                                                    Book Now
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row g-0 hotel_table_border">
+                            <div class="col-3 hotel_table_border2">
+                                <div class="room_option_continer">
+                                    <div class="room_img">
+                                        <img src="./images/home/destinations/destination1.jpg" alt="">
+                                    </div>
+                                    <h4>Super King Delux</h4>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia iste cumque
+                                        ipsa sint ducimus nulla.</p>
+
+                                    <div class="bed_description d-flex flex-column gap-2">
+                                        <div class="d-flex gap-2">
+                                            <div class="bed_desc_img">
+                                                <img src="./images/icons/room.png" alt="">
+                                            </div>
+                                            <p>Room size: 40m <sup>2</sup></p>
+                                        </div>
+                                        <div class="d-flex gap-2">
+                                            <div class="bed_desc_img">
+                                                <img src="./images/icons/river.png" alt="">
+                                            </div>
+                                            <p>River View</p>
+                                        </div>
+                                        <div class="d-flex gap-2">
+                                            <div class="bed_desc_img">
+                                                <img src="./images/icons/double-bed.png" alt="">
+                                            </div>
+                                            <p>1 King Bed</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-9 hotel_table_border2">
+
+                                <div class="row g-0">
+                                    <div class="col-4">
+                                        <div class="rom_option">
+                                            <ul>
+                                                <li>Free cancellation</li>
+                                                <li>Pets Allowed</li>
+                                                <li>Car Parking</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="hotel_serv_list">
+                                            <ul>
+                                                <li>Free Wifi</li>
+                                                <li>Excerise in gym</li>
+                                                <li>Easy car parking </li>
+                                                <li>Free transportaion form airport</li>
+                                                <li>special guide instruction</li>
+                                                <li>Pay at the hotel</li>
+                                                <li>Paid Resturant Access</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+
+                                    <div
+                                        class="col-4 hotel_table_border2 d-flex align-items-center justify-content-center">
+                                        <div class="text-center p-3">
+                                            <div class="hotel_price">
+                                                $1299
+                                                <span>/Per Night</span>
+                                            </div>
+                                            <div class="hotel_room_num">
+                                                Price for 1 room
+                                            </div>
+
+                                            <div class="hotel_book_btn">
+                                                <a href="contact.html" class="primary_btn">
+                                                    Book Now
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row g-0">
+                                    <div class="col-4">
+                                        <div class="rom_option border-bottom-0">
+                                            <ul>
+                                                <li>Free cancellation</li>
+                                                <li>Pets Allowed</li>
+                                                <li>Car Parking</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="hotel_serv_list border-bottom-0">
+                                            <ul>
+                                                <li>Free Wifi</li>
+                                                <li>Excerise in gym</li>
+                                                <li>Easy car parking </li>
+                                                <li>Free transportaion form airport</li>
+                                                <li>special guide instruction</li>
+                                                <li>Pay at the hotel</li>
+                                                <li>Paid Resturant Access</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+
+                                    <div
+                                        class="col-4 hotel_table_border2 d-flex align-items-center justify-content-center border-bottom-0">
+                                        <div class="text-center p-3">
+                                            <div class="hotel_price">
+                                                $1299
+                                                <span>/Per Night</span>
+                                            </div>
+                                            <div class="hotel_room_num">
+                                                Price for 1 room
+                                            </div>
+
+                                            <div class="hotel_book_btn">
+                                                <a href="contact.html" class="primary_btn">
+                                                    Book Now
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
 
+            </div>
             <div class="hotel_second_sec my-5">
 
                 <div class="row">
                     <div class="col-lg-8">
-                        <div class="tour_plan_map mt-5">
+                        <div class="tour_plan_map">
                             <h3>Map</h3>
 
                             <iframe

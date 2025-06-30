@@ -3325,6 +3325,22 @@ img {
 
 
 /* ++++++++++++ HOTEL PAGE CSS STARTS ++++++++++++ */
+.customScrollbar {
+    overflow: auto;
+}
+
+/* Hide scrollbar on large screens and up */
+@media (min-width: 992px) {
+    .customScrollbar::-webkit-scrollbar {
+        display: none;
+    }
+
+    .customScrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+}
+
 .hotel_properties_high_light_Section {
     padding: clamp(24px, 3vw, 44px);
     border: 2px solid var(--top-header);
@@ -3332,6 +3348,13 @@ img {
     margin-top: 44px;
 }
 
+.hotel_rooms_container {
+    min-width: 900px;
+}
+.bed_desc_img img{
+    width: 32px;
+    object-fit: contain;
+}
 .hotel_properties_high_light_Section h3,
 .hotel_rooms_container h3 {
     font-weight: 700;
@@ -3454,31 +3477,43 @@ img {
     object-fit: contain;
 }
 
-
-.hotel_rooms_container table thead {
+.hotel_rooms_container .hotel_heading {
     background-color: #496862;
-}
-
-.hotel_rooms_container table thead th {
-    background-color: transparent;
-    padding: 16px;
     color: var(--white-color);
-    font-weight: 600;
-
-    border: none !important;
-}
-
-.hotel_rooms_container .table>:not(caption)>*>* {
     padding: 16px;
+    font-weight: 600;
 }
 
-.hotel_rooms_container .table-borderless>:not(caption)>*>* {
-    border-bottom: 2px solid var(--top-header);
+.hotel_table_details .hotel_table_border {
+    border-left: 2px solid var(--top-header);
     border-right: 2px solid var(--top-header);
 }
 
+.hotel_table_details .hotel_table_border .hotel_table_border2 {
+    border-right: 2px solid var(--top-header);
+    border-bottom: 2px solid var(--top-header);
+}
+
+.hotel_table_details .hotel_table_border .hotel_table_border2:last-child {
+    border-right: 0;
+}
+
+.rom_option,
+.hotel_serv_list {
+    border-right: 2px solid var(--top-header);
+}
+
+.rom_option,
+.hotel_serv_list {
+    height: 100%;
+    border-bottom: 2px solid var(--top-header);
+    padding: 16px;
+}
+
+
+
 .hotel_price {
-    font-size: clamp(20px, 2vw, 28px);
+    font-size: clamp(20px, 2vw, 32px);
     font-weight: 700;
     color: var(--primary-color);
 }
@@ -3505,6 +3540,10 @@ img {
 
 .hotel_book_btn .primary_btn:hover {
     color: var(--primary-color);
+}
+
+.hotel_serv_list {
+    padding: 16px;
 }
 
 .hotel_serv_list ul {
@@ -3575,6 +3614,7 @@ img {
 .room_option_continer {
     max-width: 320px;
     width: 100%;
+    padding: 16px;
 }
 
 
@@ -3585,20 +3625,11 @@ img {
     font-weight: 400;
 }
 
-.hotel_rooms_container table {
-    border-radius: 10px;
-    overflow: hidden;
-}
+
 
 .room_option_continer h4 {
     font-weight: 600;
     color: var(--black-shade01);
-}
-
-.hotel_rooms_container table tbody {
-    border: 2px solid var(--top-header) !important;
-    border-radius: 10px;
-    border-top: 0;
 }
 
 /* ++++++++++++ HOTEL PAGE CSS ENDS ++++++++++++ */
@@ -4029,12 +4060,13 @@ img {
     border-radius: 5px;
 }
 
-.blog_comment_container .blog_comment .client_profile_Details h6{
+.blog_comment_container .blog_comment .client_profile_Details h6 {
     font-weight: 600;
     margin: 0;
     margin-bottom: 5px;
 }
-.comment_replay_btn{
+
+.comment_replay_btn {
     padding: 6px 16px;
     border: 2px solid var(--top-header);
     font-weight: 600;
@@ -4042,14 +4074,17 @@ img {
     cursor: pointer;
     transition: all .5s ease-in-out;
 }
-.comment_replay_btn:hover{
+
+.comment_replay_btn:hover {
     color: var(--primary-color);
 }
+
 .blog_comment_container .blog_comment:nth-child(even) {
-    width: 95%; 
+    width: 95%;
     margin-left: auto;
 }
-.add_new_comment_div h3{
+
+.add_new_comment_div h3 {
     font-weight: 700;
 }
 
