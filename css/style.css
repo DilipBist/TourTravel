@@ -3755,7 +3755,8 @@ img {
 .recent_blog_Details:hover .rec_blog_img img {
     transform: scale(1.05);
 }
-.recent_blog_Details:hover{
+
+.recent_blog_Details:hover {
     color: var(--primary-color);
 }
 
@@ -3783,7 +3784,8 @@ img {
     color: var(--grey-color);
     font-weight: 400;
 }
-.blog_shadow ul{
+
+.blog_cat ul {
     display: flex;
     flex-direction: column;
     gap: 5px;
@@ -3791,19 +3793,60 @@ img {
     font-weight: 400;
     margin-top: 20px;
 }
-.blog_shadow .tag_links{
+
+.blog_cat ul li a:hover {
+    color: var(--primary-color);
+}
+
+.blog_shadow .tag_links {
     display: flex;
     align-items: center;
     gap: 5px;
     flex-wrap: wrap;
 }
-.blog_shadow .tag_links a{
+
+.blog_shadow .tag_links a {
     padding: 5px 16px;
     border-radius: 20px;
     border: 2px solid var(--top-header);
     color: var(--grey-color);
     font-weight: 400;
+    transition: all .5s ease-in-out;
 }
+
+.blog_shadow .tag_links a:hover {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+.blog_gallary .blog_gallary_img {
+    height: 80px;
+    overflow: hidden;
+    border-radius: 6px;
+}
+
+.blog_gallary .blog_gallary_img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: all .5s ease-in-out;
+}
+
+.blog_gallary .blog_gallary_img:hover img {
+    transform: scale(1.1) rotate(15deg);
+}
+
+.blog_follow_links ul li a img {
+    width: clamp(32px, 3vw, 44px);
+}
+
+.blog_follow_links ul {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
 /* ========== BLOG PAGE CSS ENDS =========== */
 
 /* media queries  */
